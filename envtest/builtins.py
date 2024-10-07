@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.ndimage import gaussian_filter
 from scipy import misc
+import pandas as pd
 
 
 __all__ = ['rand_array','smooth_image','my_mat_solve']
@@ -13,3 +14,7 @@ def rand_array(shape):
 
 def my_mat_solve(A, b):
     return A.inv()*b
+
+def read_csv(file):
+    pd.read_csv(file)
+
